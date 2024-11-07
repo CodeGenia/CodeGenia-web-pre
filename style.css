@@ -301,14 +301,7 @@
   border:none;
 }
 .button-animation-gray {
-    position: relative;
-    color: var(--accent-color);
-    text-transform: uppercase;
-    overflow: hidden;
-    letter-spacing: 1px;
-    transition: 1s;
     background:#EFEFEF;
-    border:none;
 }
 .button-animation span {
   position: absolute;
