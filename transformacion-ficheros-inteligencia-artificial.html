@@ -253,170 +253,111 @@
         </div>
     </nav>
 
-    <video id="background-video" autoplay loop muted poster="video/background-header.jpg">
-        <source src="video/background-header.mp4" type="video/mp4">
-    </video>
+    <div style="background: url('./img/header-files.png') no-repeat center center fixed; 
+        width: 100vw; height: 100vh; object-fit: cover; background-size: cover; position: fixed; left: 0;
+        right: 0; top: 0; bottom: 0; z-index: -1;"></div>
 
     <div class="customOverlay"></div>
 
-    <div class="bg-white">
-        <div class="container">
-            <div class="row">
-                <h2 class="pb-2 border-bottom primary-color my-5">Success cases</h2>
+    <div class="container pt-5 pb-4 mt-5 text-white">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1 class="display-5 fw-bold mt-5 mb-5">Caso de éxito: Transformación y estandarización de ficheros con IA</h1>
+                <br><br>
             </div>
-        </div>
+        </div>        
     </div>
 
     <div class="bg-white">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <!--div class="row align-items-center featurette py-4 mt-3">
-                        <div class="col-md-5 text-center">
-                            <img src="img/header-naval.png" alt="Logotipo de Inteligencia Artificial de CodeGenia"
-                                class="img-fluid img-technology">
-                        </div>
-                        <div class="col-md-7">
-                            <h3 class="featurette-heading fw-normal lh-1 my-3">Automatización inteligente del proceso de pedidos</h3>
-                            <p class="lead">En uno de nuestros clientes del sector naval, hemos transformado el proceso de gestión de pedidos de productos, logrando una automatización integral que optimiza el tiempo, la precisión y la eficiencia de todo el ciclo de pedidos.</p>
-                            <p class="lead">El cliente buscaba una forma de mejorar la gestión de sus pedidos que recibía vía email, una tarea que requería tiempo y esfuerzo manual para coordinarse con proveedores, actualizar precios y verificar la disponibilidad de stock. Además, necesitaban agilizar la creación de propuestas personalizadas para cada cliente, incluyendo la documentación técnica correspondiente.</p>
-                            <a class="btn button-animation button-animation-gray mt-3 px-4 py-3" href="./automatizacion-inteligente-pedidos">
-                                More information
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </a>
-                        </p>                        
-                    </div-->
-
                     <div class="row align-items-center featurette py-4 mt-3">
-                        <div class="col-md-5 text-center">
-                            <img src="img/header-naval.png" alt="Logotipo de Inteligencia Artificial de CodeGenia" class="img-fluid img-technology">
-                        </div>
-                        <div class="col-md-7">
-                            <h3 class="featurette-heading fw-normal lh-1 my-3">Intelligent automation of the order process</h3>
-                            <p class="lead">For one of our clients in the naval sector, we transformed their product order management process by achieving full automation, optimizing time, accuracy, and efficiency across the entire order cycle.</p>
-                            <p class="lead">The client sought a way to improve the management of their orders received via email, a task that required time and manual effort to coordinate with suppliers, update prices, and check stock availability. Additionally, they needed to streamline the creation of customized proposals for each client, including the relevant technical documentation.</p>
-                            <a class="btn button-animation button-animation-gray mt-3 px-4 py-3" href="./automatizacion-inteligente-pedidos">
-                                More information
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </a>
-                        </p>                        
-                    </div>
+                        <div class="col-md-12">
+                            <h3 class="featurette-heading fw-normal lh-1 my-3">Desafío</h3>
+                            <p class="lead mb-5">Nuestro cliente, una empresa dedicada a servicios de ingeniería, recibía archivos de sus clientes en diferentes formatos y con datos heterogéneos, lo que hacía que el proceso de creación de presupuestos fuera lento y requería un alto esfuerzo manual para consolidar la información. Este proceso no solo generaba demoras, sino que incrementaba los costos operativos y el riesgo de errores en las cotizaciones.</p>
 
-                    <div class="row featurette py-4 align-items-center">
-                        <div class="col-md-5 order-md-2 text-center">
-                            <img src="img/blockchain2.png" alt="Blockchain solutions for secure data transactions by CodeGenia" class="img-fluid img-technology">
-                        </div>
-                        <div class="col-md-7 order-md-1">
-                            <h3 class="featurette-heading fw-normal lh-1 my-3">Artificial Intelligence files transformation</h3>
-                            <p class="lead">Blockchain technology provides a decentralized framework that enhances the security and transparency of digital transactions. Our expertise in <strong>smart contracts</strong>, <strong>decentralized finance (DeFi)</strong>, and <strong>non-fungible tokens (NFTs)</strong> enables businesses to innovate with confidence. By implementing <strong>blockchain solutions</strong>, we help organizations achieve greater <strong>data integrity</strong> and reduce fraud risk. Discover how our blockchain services can transform your business operations and establish trust with stakeholders.</p>
-                            <h4 class="lead">Blockchain Services:</h4>
-                            <ul class="lead">
-                                <li>Development of Decentralized Applications (dApps).</li>
-                                <li>Implementation of Smart Contracts.</li>
-                                <li>Item Traceability.</li>
-                                <li>Asset Tokenization.</li>
-                                <li>Security and Authentication.</li>
-                            </ul>
-                            <a class="btn button-animation button-animation-gray mt-3 px-4 py-3" href="./transformacion-ficheros-inteligencia-artificial">
-                                More information
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </a>
-                        </div>
-                        
-                    </div>
+                            <h3 class="featurette-heading fw-normal lh-1 my-3">Solución</h3>
+                            <p class="lead">Implementamos una solución avanzada de Inteligencia Artificial y Automatización Robótica de Procesos (RPA), que ahora permite a nuestro cliente gestionar pedidos de manera autónoma y sin intervención humana en cada etapa clave:</p>
+                            <ol class="lead mb-5">
+                                <li>Recepción y clasificación automática de emails: El sistema de IA identifica, clasifica y extrae automáticamente la información clave del email del cliente, reconociendo el tipo de producto y sus requisitos específicos.</li>
+                                <li>Comunicación automatizada con proveedores: A través de RPA, se envían automáticamente solicitudes a los proveedores, verificando stock y actualizaciones de precios en tiempo real. Nuestro sistema se integra directamente con las plataformas de los proveedores, lo que permite tener información siempre actualizada y evitar cualquier demora en la cadena de suministro.</li>
+                                <li>Actualización de precios y stock en tiempo real: La solución de IA supervisa constantemente la disponibilidad y el coste de cada producto, permitiendo ajustar rápidamente las ofertas según las últimas condiciones del mercado. Esto garantiza que el cliente recibe una propuesta precisa y ajustada a la realidad de cada proveedor.</li>
+                                <li>Preparación automática de propuestas y documentación: Generamos un borrador de respuesta que incluye una oferta detallada y personalizada para el cliente, con la documentación técnica adecuada y cualquier archivo adicional relevante. Todo ello se presenta en un email de respuesta listo para ser enviado con un solo clic.</li>
+                            </ol>
 
-                    <div class="row featurette py-4 align-items-center">
-                        <div class="col-md-5 text-center">
-                            <img src="img/vr.png" alt="Logotipo de Realidad Extendida de CodeGenia"
-                                class="img-fluid img-technology">
-                        </div>
-                        <div class="col-md-7">
-                            <h3 class="featurette-heading fw-normal lh-1 my-3">Spatial Computing</h3>
-                            <p class="lead">Extended Reality (XR) is an umbrella term that encompasses <strong>virtual reality (VR)</strong>, <strong>augmented reality (AR)</strong>, and <strong>mixed reality (MR)</strong>. Our XR solutions create immersive experiences that enhance user interaction with products and environments. From <strong>immersive training simulations</strong> in VR to <strong>AR applications</strong> that overlay digital information onto the real world, we offer cutting-edge technology that captivates audiences. Learn how our XR services can elevate your marketing strategies and improve customer experiences.</p>
-                            <h4 class="lead">Spatial Computing Services:</h4>
-                            <ul class="lead">
-                                <li>Creation of mobile or web Augmented Reality applications.</li>
-                                <li>Virtual Reality projects.</li>
-                                <li>Development of Mixed Reality solutions.</li>
-                                <li>XR consulting and strategy.</li>
-                                <li>Creation of high-quality 3D content and animations.</li>
-                            </ul>
-                            <a class="btn button-animation button-animation-gray mt-3 px-4 py-3" href="./virtual-reality">
-                                More information
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </a>
-                        </div>
-                    </div>
+                            <h3 class="featurette-heading fw-normal lh-1 my-3">Resultado</h3>
+                            <p class="lead mb-5">La estandarización de los ficheros de clientes mediante inteligencia artificial ha resultado en una transformación significativa para el proceso de creación de presupuestos, aportando ahorros de tiempo, esfuerzo y costos. Esta solución se ha convertido en una ventaja competitiva clave para nuestro cliente, mejorando tanto la eficiencia interna como la experiencia de sus propios clientes.</p>
+
+                            <h3 class="featurette-heading fw-normal lh-1 my-3">¿Por qué confiar en CodeGenia?</h3>
+                            <p class="lead">
+                                Nuestra experiencia en soluciones de IA y RPA nos permite crear procesos de negocio adaptados a las necesidades de cada cliente. La automatización de pedidos de productos demuestra nuestra capacidad para combinar inteligencia artificial con la automatización de procesos complejos, asegurando no solo eficiencia, sino también una mejora en la calidad del servicio.<br/><br/>
+                                
+                            </p>
+                            <h3 class="featurette-heading fw-normal my-3">
+                                Transforme su negocio, contáctenos ahora para llevar su proceso de pedidos al siguiente nivel:
+                            </h3>
+                        </p>
+                    </div>                    
                 </div>
             </div>
         </div>
     </div>
 
-    <img class="img-fluid" alt="Imagen de fondo para cambio de sección con formas de triangulo" src="img/fondo-derecha-abajo-triangulo.jpg" />
-
-    <div id="projects" class="bg-gray anchorSpace"></div>
-
-    <div class="bg-gray pb-3 hide">
+    <div class="bg-white">
         <div class="container">
-            <h2 class="primary-color pb-2 border-bottom">Discover some of our projects</h2>
-
-            <div class="row featurette my-5 align-items-center">
-                <div class="col-md-5 text-center">
-                    <img src="img/questiona.jpg" alt="AI software solution by CodeGenia for business data analysis" class="img-fluid imgBorderRadius mb-3 img-technology">
-                </div>
-                <div class="col-md-6 offset-md-1">
-                    <h3 class="featurette-heading fw-normal lh-1 my-3">Questiona - AI Applied to Your Business</h3>
-                    <p class="lead mt-3">
-                        Our artificial intelligence platform, Questiona, is designed to transform the way you access and manage information. By integrating various sources such as documents, databases, and other data sources, our AI can efficiently extract, analyze, and "memorize" large amounts of data. This advanced technology allows you to consolidate dispersed information into one place, making it easier to find precise answers without needing to navigate through multiple files.
-                    </p>
-                    <p class="lead mt-3">
-                        Through an intuitive chatbot, you can directly ask questions about the data the AI has "memorized" and receive clear and quick answers in real time. No more wasting time manually searching through extensive documents—simply ask the chatbot and instantly access relevant information. This software is ideal for professionals who need to access large volumes of information quickly and accurately, optimizing time and improving decision-making.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row featurette my-5 align-items-center">
-                <div class="col-md-5 offset-md-1 order-md-2 text-center">
-                    <img src="img/virtual-reality.jpg" alt="Virtual reality platform by CodeGenia" class="img-fluid imgBorderRadius mb-3 img-technology">
-                </div>
-                <div class="col-md-6 order-md-1">
-                    <h3 class="featurette-heading fw-normal lh-1 my-3">VR/AR/360 Platform</h3>
-                    <p class="lead mt-3">
-                        Discover the next generation of digital interaction with our Virtual Reality and Augmented Reality platform. Designed to transform how you experience the 3D world, our solution allows you to visualize three-dimensional objects with unprecedented detail, explore immersive environments, and navigate through 360° images with remarkable fluidity. Whether you want to showcase products, simulate environments, or create interactive experiences, our platform combines the best of VR and AR to offer you a space where the physical and digital converge.
-                    </p>
-                    <p class="lead">
-                        Ideal for sectors such as architecture, education, entertainment, and commerce, our platform allows users to interact intuitively, providing immersive experiences that enhance engagement and retention. Moreover, its cross-platform integration ensures easy access from any device. Bring your ideas to life and allow your audience to explore, discover, and connect with your content in an entirely new and exciting way.
-                    </p>
-                    <p class="lead">
-                        Welcome to the future of digital interaction!
-                    </p>           
-                </div>
-            </div>
-
-            <div class="row featurette my-5 align-items-center">
-                <div class="col-md-5 text-center">
-                    <img src="img/logo-infinita.jpg" alt="Infinita tokenization platform logo" class="img-fluid imgBorderRadius mb-3 img-technology">
-                </div>
-                <div class="col-md-6 offset-md-1">
-                    <h3 class="featurette-heading fw-normal lh-1 my-3">Infinita - Tokenization Platform</h3>
-                    <p class="lead mt-3">                        
-                        Step into the future of digitalization with our blockchain platform that allows you to create tokens and NFTs quickly, securely, and effortlessly. Designed for businesses, creators, and developers, our platform puts the ability to generate unique digital assets at your fingertips with just a few clicks. Whether you're looking to launch your own token, tokenize assets, or create digital collectibles, our blockchain solution offers the robust and scalable infrastructure you need.
-                    </p>
-                    <p class="lead mt-3">
-                        With cutting-edge technology, we ensure fast, secure, and transparent transactions. Additionally, our platform is designed with usability in mind, making it easy for anyone, regardless of their level of experience, to use. Ideal for commerce, digital art, video games, and more, it opens doors to new business opportunities and monetization. Join the blockchain revolution and take your project to the next level with the creation of unique and certified digital assets.
-                    </p>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="pt-2 pb-5">
+                        <form name="Contact" class="row g-3 needs-validation" netlify>
+                            <div class="col-md-12">
+                                <label for="name" class="form-label">Name and surname:</label>
+                                <input type="text" class="form-control" id="name" name="name"
+                                    placeholder="Enter your name and surname" aria-label="Name and surname"
+                                    required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="text" class="form-control" id="email" name="email"
+                                    placeholder="Enter your email" aria-label="Email"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid email.
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="message">Message:</label>
+                                <textarea class="form-control" id="message" rows="3" name="message"
+                                    placeholder="Write your message here" aria-label="Message" required></textarea>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                        I have read and accept the <a href="/privacy-policy" target="_blank"
+                                            rel="noopener noreferrer" itemprop="url"
+                                            class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                            aria-label="I accept the privacy policy">Privacy policy</a>
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        Accepting the privacy policy is required.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn button-animation button-animation-gray mt-3 px-4 py-3" type="submit" aria-label="Send" href="./automatizacion-inteligente-pedidos">
+                                    SEND
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </form>                        
+                    </div>
                 </div>
             </div>
         </div>
