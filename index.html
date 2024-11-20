@@ -84,6 +84,51 @@
           }
         }
     </script>
+
+    <style>
+		@supports(animation-timeline: view()) {
+			@keyframes move {
+				to {
+					/* Move horizontally so that right edge is aligned against the viewport */
+					transform: translateX(calc(-100% + 100vw));
+				}
+			}
+
+			#sectionPin {
+				/* Stretch it out, so that we create room for the horizontal scroll animation */
+				height: 300vh;
+				overflow: visible; /* To make position sticky work … */
+
+				view-timeline-name: --section-pin-tl;
+				view-timeline-axis: block;
+			}
+
+			.pin-wrap-sticky {
+				/* Stick to Top */
+				/*height: 100vh;*/
+				width: 100vw;
+				position: sticky;
+				top: 0;
+
+				width: 100vw;
+				overflow-x: hidden;
+			}
+
+			.pin-wrap {
+				/*height: 100vh;*/
+				width: 250vmax;
+
+				/* Hook animation */
+				will-change: transform;
+				animation: linear move forwards;
+
+				/* Link animation to view-timeline */
+				animation-timeline: --section-pin-tl;
+				animation-range: contain 0% contain 100%;
+			}
+		}
+	</style>
+
 </head>
 
 <body>
@@ -106,9 +151,9 @@
                         <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="./use-cases"
                             aria-label="Success cases">Success cases</a>
                     </li>
-                    <li class="nav-item">
+                    <!--li class="nav-item">
                         <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./industries" aria-label="Proyectos">Industries</a>
-                    </li>
+                    </!--li-->
                     <li class="nav-item">
                         <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./about-us" aria-label="Sobre nosotros">About us</a>
                     </li>
@@ -216,6 +261,16 @@
         </div>
     </div>
 
+    <section id="sectionPin" class="d-none">
+        <div class="pin-wrap-sticky">
+            <div class="pin-wrap">
+                <img src="./img/oficina-codegenia.png" alt="">
+                <img src="./img/oficina-codegenia.png" alt="">
+                <img src="./img/oficina-codegenia.png" alt="">
+            </div>
+        </div>
+    </section>
+
     <!-- imagen de fondo 100% de ancho y 300px de alto -->
     <div style="width: 100%; height: 350px; background: url('./img/offices.jpg') no-repeat center center; object-fit: cover; background-size: cover;"></div>
 
@@ -230,7 +285,7 @@
             <div class="row g-4 pt-5 row-cols-1 row-cols-lg-3">
                 <div class="feature col">
                     <h3 class="fs-2 text-body-emphasis">Innovadores, no nuevos</h3>
-                    <p>No nos subimos a la ola de ChatGPT. Llevamos más de 10 años trabajando con tecnologías como VR, Blockchain, Inteligencia Artificial y Machine Learning.</p>
+                    <p>No nos subimos a la ola de ChatGPT.<br>Más de 10 años trabajando con tecnologías VR, Blockchain, IA y ML.</p>
                     <!--a href="#" class="icon-link">
                         Call to action
                         <svg class="bi">
@@ -240,7 +295,7 @@
                 </div>
                 <div class="feature col">
                     <h3 class="fs-2 text-body-emphasis">Experiencia demostrada</h3>
-                    <p>No hablamos de lo que podemos hacer. Hablamos de lo que sabemos y de lo que ya hemos hecho.</p>
+                    <p>No hablamos de lo que podemos hacer.<br>Hablamos de lo que ya hemos hecho.</p>
                     <!--a href="#" class="icon-link">
                         Call to action
                         <svg class="bi">
